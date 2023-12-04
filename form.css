@@ -118,5 +118,6 @@ form .form__submit input{
 }
 form .form__submit input:hover{
     background: linear-gradient(to right, rgb(79, 79, 152), rgb(159, 84, 196)) border-box;
+    cursor: pointer;
 }
 

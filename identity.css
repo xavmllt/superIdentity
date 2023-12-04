@@ -39,11 +39,18 @@ nav ul a:hover{
     font-weight: 900;
 }
 
+
 main section h1{
     font-family: 'Dancing Script', cursive;
     font-size: 60px;
 }
-main section p{
+main section .conteneur{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main section .conteneur p{
     font-family: 'Pacifico', cursive;
     font-size: 25px;
 }
@@ -51,8 +58,28 @@ main section h1, p{
     text-align: center;
     margin-top: 50px;
 }
-
+main section .reponse{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+}
+.choix{
+    border: 5px solid #a9a6a6;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    font-size: 19px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.choix:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
 main section a{
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
 }
@@ -83,20 +110,4 @@ main section a button:hover{
     background: linear-gradient(to right, rgba(133,224,133,1), rgba(255,77,77,1), rgba(0,212,255,1)) border-box;
     color: #fff;
     cursor: pointer;
-}
-
-footer .marque{
-    background-color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: larger;
-    height: 45px;
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
 }

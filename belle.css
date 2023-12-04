@@ -4,7 +4,7 @@
 }
 
 body{
-    background: rgb(255,77,77);
+    background: rgb(255, 81, 81);
 }
 header{
     display: flex;
@@ -54,8 +54,12 @@ main section .belle .belle__description{
     line-height: 1.5;
     margin: 20px;
     font-family: 'Comic Neue', cursive;
-    font-size: 22px;
+    font-size: 25px;
     color: #262626;
+    font-weight: 500;
+}
+.belle__image{
+    border: 1px solid black;
 }
 .belle__image #belle2{
     margin-left: 80px;
