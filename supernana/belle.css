@@ -58,18 +58,20 @@ main section .belle .belle__description{
     color: #262626;
     font-weight: 500;
 }
-.belle__image{
-    border: 1px solid black;
+.belle__image #belle1{
+    height: 400px;
 }
 .belle__image #belle2{
     margin-left: 80px;
+    height: 500px;
 }
 
 .belle__description a{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
     text-decoration: none;
+    width: 100px;
+    margin: auto;
 }
 .belle__description a button{
     width: 100px;
@@ -83,4 +85,5 @@ main section .belle .belle__description{
 .belle__description a button:hover{
     background: linear-gradient(to right, darkblue, darkorchid) border-box;
     color: #fff;
+    cursor: pointer; 
 }

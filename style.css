@@ -52,10 +52,6 @@ main section h1, p{
     margin-top: 50px;
 }
 
-main section a{
-    display: flex;
-    justify-content: center;
-}
 main section .supernana{
     margin-top: 50px;
     display: flex;
@@ -68,8 +64,12 @@ main section .supernana img{
     height: 200px;
 }
 main section a{
-    margin-top: 80px;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    margin: 50px auto;
+
 }
 main section a button{
     width: 100px;

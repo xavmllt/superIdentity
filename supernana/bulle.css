@@ -42,6 +42,7 @@ nav ul a:hover{
 main section .bulle{
     display: flex;
     margin-top: 40px;
+    align-items: center;
 }
 main section .bulle .bulle__description{
     text-align: center;
@@ -57,17 +58,13 @@ main section .bulle .bulle__description{
     font-size: 22px;
     color: #262626;
 }
-.bulle__image #bulle2{
-    margin: 80px;
-    width: 400px;
-}
 
 .bulle__description a{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
     text-decoration: none;
-    margin-bottom: 50px;
+    width: 100px;
+    margin: 30px auto;
 }
 .bulle__description a button{
     width: 100px;
@@ -81,4 +78,5 @@ main section .bulle .bulle__description{
 .bulle__description a button:hover{
     background: linear-gradient(to right, darkblue, darkorchid) border-box;
     color: #fff;
+    cursor: pointer;
 }

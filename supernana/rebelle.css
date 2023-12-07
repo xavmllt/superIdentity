@@ -57,15 +57,16 @@ main section .rebelle .rebelle__description{
     font-size: 22px;
     color: #262626;
 }
-.rebelle__image #rebelle2{
-    margin-top: 40px;
+.rebelle__image{
+    margin: auto;
 }
 
 .rebelle__description a{
     display: flex;
     justify-content: center;
     text-decoration: none;
-    margin-bottom: 40px;
+    width: 100px;
+    margin: 30px auto;
 }
 .rebelle__description a button{
     width: 100px;
@@ -79,4 +80,5 @@ main section .rebelle .rebelle__description{
 .rebelle__description a button:hover{
     background: linear-gradient(to right, darkblue, darkorchid) border-box;
     color: #fff;
+    cursor: pointer;
 }
