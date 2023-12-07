@@ -3,10 +3,10 @@ function getParams() {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     return urlParams;
-};
+}
 
 function mettreAJourURL() {
-    window.location.href = `question5.html?compteurBelle=${compteurBelle}&compteurBulle=${compteurBulle}&compteurRebelle=${compteurRebelle}&compteurOther=${compteurOther}`;
+    window.location.href = `/resultat.html?compteurBelle=${compteurBelle}&compteurBulle=${compteurBulle}&compteurRebelle=${compteurRebelle}&compteurOther=${compteurOther}`;
 };
 
 // Récupérer la valeur du compteur depuis les paramètres de l'URL
@@ -15,6 +15,7 @@ let compteurBelle = parseInt(params.get('compteurBelle')) || 0;
 let compteurBulle = parseInt(params.get('compteurBulle')) || 0;
 let compteurRebelle = parseInt(params.get('compteurRebelle')) || 0;
 let compteurOther = parseInt(params.get('compteurOther')) || 0;
+
 console.log(compteurBelle);
 console.log(compteurBulle);
 console.log(compteurRebelle);

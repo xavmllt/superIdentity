@@ -19,6 +19,7 @@ let compteurOther = parseInt(params.get('compteurOther')) || 0;
 console.log(compteurBelle);
 console.log(compteurBulle);
 console.log(compteurRebelle);
+console.log(compteurOther);
 
 
 let clickCount = 0;
