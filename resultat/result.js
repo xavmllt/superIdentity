@@ -20,13 +20,13 @@ console.log(compteurOther);
 
 bouton.addEventListener("click", ()=>{
     if(compteurBelle > compteurBulle && compteurBelle > compteurRebelle && compteurBelle > compteurOther){
-        window.location.href = "supernana/belle.html";
+        window.location.href = "/supernana/belle.html";
     }else if(compteurBulle > compteurBelle && compteurBulle > compteurRebelle && compteurBulle > compteurOther){
-        window.location.href = "supernana/bulle.html";
+        window.location.href = "/supernana/bulle.html";
     }else if(compteurRebelle > compteurBelle && compteurRebelle > compteurBulle && compteurRebelle > compteurOther){
-        window.location.href = "supernana/rebelle.html";
+        window.location.href = "/supernana/rebelle.html";
     }else{
-        alert("A suivre");
+        window.location.href = "/supernana/selfIdentity.html";
     };
 });
 
