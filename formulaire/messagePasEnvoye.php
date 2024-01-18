@@ -16,10 +16,8 @@
     </style>
 </head>
 <body>
-
     <div class="message-container">
         <?php
-        // Le code que vous souhaitez afficher centré
         echo "Oh non il y a eu un soucis, cela doit surement être du à ton adresse mail, réessaye ! 😫";
         ?>
     </div>
