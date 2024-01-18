@@ -6,7 +6,7 @@ function getParams() {
 }
 
 function mettreAJourURL() {
-    window.location.href = `/resultat/resultat.html?compteurBelle=${compteurBelle}&compteurBulle=${compteurBulle}&compteurRebelle=${compteurRebelle}&compteurOther=${compteurOther}`;
+    window.location.href = `/superIdentity/resultat/resultat.html?compteurBelle=${compteurBelle}&compteurBulle=${compteurBulle}&compteurRebelle=${compteurRebelle}&compteurOther=${compteurOther}`;
 };
 
 // Récupérer la valeur du compteur depuis les paramètres de l'URL

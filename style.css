@@ -68,8 +68,7 @@ main section a{
     display: flex;
     justify-content: center;
     width: 100px;
-    margin: 50px auto;
-
+    margin: 11% auto;
 }
 main section a button{
     width: 100px;
