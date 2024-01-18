@@ -29,8 +29,9 @@ if(mysqli_connect_errno()){
 // On crée la requête 
 $sql = "INSERT INTO player (pseudo, email, commentaire) VALUES ('$pseudo', '$email', '$commentaire')";
 
-$result = mysqli_query($cnx, $sql) || die ('Echec de la requête insert');
+$result = mysqli_query($cnx, $sql) || die(include("messagePasEnvoye.php"));
 
+include("messageEnvoye.php");
 // ferme la connexion à la BDD
 mysqli_close($cnx);
 ?>
