@@ -18,6 +18,8 @@
         </div>
         <nav>
             <ul>
+                <a href="../pages/messagerie.php">MESSAGERIE</a>
+                <a href="#">CHAT</a>
                 <a href="../pages/avis.php"><li>AVIS</li></a>
             </ul>
         </nav>

@@ -40,6 +40,8 @@ if(isset($_POST['submit'])) {
         </div>
         <nav>
             <ul>
+                <a href="messagerie.php">MESSAGERIE</a>
+                <a href="#">CHAT</a>
                 <a href="../pages/rules.php"><li>RÈGLES</li></a>
             </ul>
         </nav>

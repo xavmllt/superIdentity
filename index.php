@@ -20,7 +20,7 @@
         <nav>
             <ul>
                 <img id="darkMode" src="assets/moon.svg" alt="Lune" onclick="changeDarkMode()"> 
-                <a href="#"><li>MESSAGERIE</li></a>
+                <a href="pages/messagerie.php"><li>MESSAGERIE</li></a>
                 <a href="#"><li>CHAT</li></a>
                 <a href="pages/rules.php"><li>RÈGLES</li></a>
                 <a href="pages/avis.php"><li>AVIS</li></a>

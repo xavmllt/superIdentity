@@ -4,6 +4,8 @@
         </div>
         <nav>
             <ul>
+                <a href="messagerie.php">MESSAGERIE</a>
+                <a href="#">CHAT</a>
                 <a href="rules.php"><li>RÈGLES</li></a>
                 <a href="avis.php"><li>AVIS</li></a>
             </ul>
