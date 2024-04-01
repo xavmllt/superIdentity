@@ -39,12 +39,18 @@ header nav ul a:hover {
     font-weight: 900;
 }
 
-main section h1 {
+main section h1, h2, h3 {
     text-align: center;
     margin-top: 50px;
     font-size: 50px;
     font-family: cursive;
     color: #38332e;
+}
+h2, h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 30px;
 }
 main section .form {
     display: flex;
@@ -55,7 +61,7 @@ main section .form form {
     display: flex;
     flex-direction: column;
 }
-main section .form form .form__contact label {
+main section .form form .form__contact label, .form__password label {
     font-family: 'Permanent Marker', cursive;
     font-size: 20px;
 }
@@ -65,7 +71,7 @@ main section .form form .form__contact label {
 .form__contact--green:hover {
     color: rgb(90, 181, 90);
 }
-.textarea--blue:hover {
+.password--blue:hover {
     color: rgba(0,212,255,1);
 }
 main section .form form .form__contact {
@@ -83,24 +89,25 @@ main section .form form .form__contact input {
     font-size: 20px;
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
-main section .form__area {
+main section form .form__password {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
-main section .form__area label {
+main section .form__connexion label {
     font-size: 30px;
     font-family: 'Permanent Marker', cursive;
 }
-main section form textarea {
-    width: 360px;
+main section .form__password input{
+    width: 200px;
+    height: 20px;
     background: linear-gradient(white, white) padding-box,
                 linear-gradient(to right, darkblue, darkorchid) border-box;
     border: 2px solid transparent;
     padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
 }
 main section form .form__submit {
     display: flex;
@@ -121,22 +128,22 @@ main section form .form__submit input:hover {
     background: linear-gradient(to right, rgb(79, 79, 152), rgb(159, 84, 196)) border-box;
     cursor: pointer;
 }
-main section form .form__messages {
+main section form .form__link {
     display: flex;
-    align-items: center;
+    align-self: center;
     justify-content: center;
-    flex-direction: column;
-    font-size: 30px;
-    margin-top: 10px;
+    padding: 20px;
+    font-size: 13px;
 }
-
-@media screen and (max-width: 1023px) {
-    main section .form form input{
-        flex-wrap: wrap;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    };
-};
-
+main section form .form__link a {
+    color: black;
+    font-weight: 600;
+}
+main section .form form .messages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section .form form .messages p {
+    font-size: 20px;
+}

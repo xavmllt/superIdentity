@@ -21,7 +21,8 @@ if(isset($_POST['submit'])) {
                 $insertUser = $bdd->prepare('INSERT INTO users(pseudo, email, pwd) VALUES (?, ?, ?)');
                 $insertUser->execute(array($pseudo, $email, $pwd));
                 $messageSuccess = "<p style='color:green'>Merci de ton inscription !</p>";
-                $_SESSION['pseudo'] = $pseudo; 
+                $_SESSION['pseudo'] = $pseudo;
+                header('Location: messagerie.php');
             };
         };
     }else {
@@ -34,7 +35,7 @@ if(isset($_POST['submit'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/connexion.css">
+    <link rel="stylesheet" href="../styles/inscription.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
@@ -46,6 +47,8 @@ if(isset($_POST['submit'])) {
     <main>
         <section>
             <h1>SUPER INSCRIPTION</h1>
+            <h2>Rejoins-le gang des super 🦸</h2>
+            <h3>Tu pourras discuter avec les autres super 🔥</h3>
             <div class="form">
                 <form action="" method="post">
                     <div class="form__contact">
@@ -62,7 +65,7 @@ if(isset($_POST['submit'])) {
                         <input type="submit" id="submit" name="submit" value="S'INSCRIRE">
                     </div>
                     <div class="form__link">
-                    <a href="connection.php">SE CONNECTER</a>
+                    <a href="connexion.php">SE CONNECTER</a>
                     </div>
                     <div class="messages">
                         <?php echo $messageVide;?>

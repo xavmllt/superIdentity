@@ -37,14 +37,17 @@ header nav ul a:hover {
     text-decoration: underline;
     font-weight: 900;
 }
-
+main section>p:first-child {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 main section p {
     font-size: 30px;
     text-align: center;
     margin-top: 35px;
     font-family: 'Satisfy', cursive;
 }
-
 main section .rules {
     display: flex;
 }
@@ -87,4 +90,10 @@ main section .rules .rules__texte .rules__bouton a button:hover {
     color: #fff;
     cursor: pointer;
 }
-
+@media screen and (max-width: 1023px) {
+    main section .rules {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    };
+};

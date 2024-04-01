@@ -1,3 +1,29 @@
+<?php
+session_start();
+$messageErreur = "";
+$messageVide = "";
+$bdd = new PDO('mysql:host=localhost;dbname=superIdentity;', 'root', 'root');
+if(isset($_POST['submit'])) {
+    if(!empty($_POST['pseudo']) && !empty($_POST['password'])) {
+        $pseudo = htmlspecialchars($_POST['pseudo']);
+        $password = sha1($_POST['password']);
+        $recupUser = $bdd->prepare('SELECT * FROM users WHERE pseudo = ? AND pwd = ?');
+        $recupUser->execute(array($pseudo, $password));
+            if($recupUser->rowCount() > 0) {
+                $_SESSION['pseudo'] = $pseudo;
+                $_SESSION['id'] = $recupUser->fetch()['id'];
+                header('Location: messagerie.php');
+            }else {
+                $messageErreur = "<p style='color:red'>Mot de passe ou pseudo incorrect";
+            };
+    }else {
+        $messageVide = "<p style='color:red'>Veuillez rensignez tout les champs";
+    };
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,13 +41,12 @@
     <main>
         <section>
             <h1>SUPER CONNEXION</h1>
+            <h2>Connecte-toi pour avoir accès à la messagerie avec les autres super !</h2>
             <div class="form">
                 <form method="post">
                     <div class="form__contact">
                         <label for="pseudo" class="form__contact--red">Ton super pseudo :</label>
                         <input type="text" name="pseudo" id="pseudo" autofocus require>
-                        <label for="email" class="form__contact--green">Ton super email :</label>
-                        <input type="email" name="email" id="email" require>
                     </div>
                     <div class="form__password">
                         <label for="password" class="password--blue">Ton super mot de passe :</label>
@@ -31,7 +56,11 @@
                         <input type="submit" id="submit" name="submit">
                     </div>
                     <div class="form__link">
-                    <a href="connection.php">SE CONNECTER</a>
+                    <a href="inscription.php">S'INSCRIRE</a>
+                    </div>
+                    <div class="messages">
+                        <?php echo $messageErreur;?>
+                        <?php echo $messageVide;?>
                     </div>
                 </form>
             </div>
