@@ -20,7 +20,6 @@
             <h1>Identity 6</h1>
             <div class="conteneur">
                 <p>Quel serait ton rôle dans un groupe d'amis ?</p>
-
                 <div class="reponse">
                     <div id="belle" class="choix">Celui qui propose des idées intelligentes et réfléchies</div>
                     <div id="bulle" class="choix">Celui qui soutient émotionnellement et conseille ses amis</div>

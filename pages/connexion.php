@@ -19,11 +19,8 @@ if(isset($_POST['submit'])) {
     }else {
         $messageVide = "<p style='color:red'>Veuillez rensignez tout les champs";
     };
-}
-
+};
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

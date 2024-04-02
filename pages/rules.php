@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../assets/logo.png">
-    <title>SUPER IDENTITY - RÈGLES</title>
+    <title>Super Identity - Règles</title>
 </head>
 <body>
     <header>

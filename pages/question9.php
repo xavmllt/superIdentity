@@ -19,7 +19,7 @@
         <section>
             <h1>Identity 9</h1>
             <div class="conteneur">
-                <p>Comment réagis-tu fasse à défi difficile ?</p>
+                <p>Comment réagis-tu face à un défi difficile ?</p>
                 <div class="reponse">
                     <div id="bulle" class="choix">J'essaie de calmer les émotions et de trouver un compromis</div>
                     <div id="other" class="choix">Je me sens parfois dépassé(e) et je cherche de l'aide</div>

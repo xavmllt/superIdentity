@@ -113,3 +113,9 @@ footer .marque {
     bottom: 0;
     width: 100%;
 }
+
+@media screen and (max-width: 1023px) {
+    main, footer .marque {
+        position: static;
+    };
+};

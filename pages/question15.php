@@ -19,7 +19,7 @@
         <section>
             <h1>Identity 15</h1>
             <div class="conteneur">
-                <p>Et toi tu se sens plus : </p>
+                <p>Et toi tu se sens plus :</p>
                 <div class="reponse">
                     <div id="belle" class="choix">Belle 🤭</div>
                     <div id="bulle" class="choix">Bulle 🙄</div>

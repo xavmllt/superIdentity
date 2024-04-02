@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="icon" type=image/png href="assets/logo.png">
     <script src="scripts/darkMode.js" defer></script>
+    <script src="scripts/signature.js" defer></script>
     <title>Super Identity</title>
 </head>
 <body>
@@ -29,7 +30,7 @@
     <main>
         <section>
             <h1>Bienvenue sur Super Identity</h1>
-            <p>T'es tu déjà demandé à quel super nana tu corresponds ?</p>
+            <p>T'es-tu déjà demandé à quelle super nana tu corresponds ?</p>
             <div class="supernana">
                 <img src="assets/rebelle.png" alt="Rebelle">
                 <img src="assets/belle.png" alt="Belle">

@@ -61,6 +61,11 @@ main section .belle__description a {
     font-size: 20px;
     color: #e6e6e6;
     font-weight: 900;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 100px;
+    margin: auto;
 }
 main section .belle__image #belle1 {
     height: 400px;
@@ -68,13 +73,6 @@ main section .belle__image #belle1 {
 main section .belle__image #belle2 {
     margin-left: 80px;
     height: 500px;
-}
-main section .belle__description a {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    width: 100px;
-    margin: auto;
 }
 main section .belle__description a button {
     width: 100px;
