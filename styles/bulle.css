@@ -6,37 +6,20 @@
 body {
     background: rgba(0,212,255,1);
 }
-header {
-    display: flex;
-    background-color: #e6e6e6;
-    align-items: center;
-    justify-content: space-between;
-}
-header .logo img {
-    width: 40px;
-    height: 40px;
+
+header img {
+    width: 45px;
+    height: 45px;
     padding: 5px;
     border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
 }
-header .logo img:hover {
+header img:hover {
     background-color: #ffffff;
-}
-header nav ul {
-    display: flex;
-    list-style-type: none;
-    gap: 50px;
-    margin-right: 20px;
-}
-header nav ul a {
-    text-decoration: none;
-}
-header nav ul a:visited {
-    color: #000;
 }
 header nav ul a:hover {
     text-decoration: underline;
     font-weight: 900;
-}
+} 
 
 main section .bulle {
     display: flex;

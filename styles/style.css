@@ -7,49 +7,20 @@ body {
     background: rgb(133,224,133);
     background: linear-gradient(90deg, rgba(133,224,133,1) 20%, rgba(255,77,77,1) 50%, rgba(0,212,255,1) 85%);
 }
-header { 
-    display: flex;
-    background-color: #e6e6e6;
-    align-items: center;
-    justify-content: space-between;
-}
-header .logo img {
-    width: 40px;
-    height: 40px;
+header img {
+    width: 45px;
+    height: 45px;
     padding: 5px;
-    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%; /* Besoin de garder ca pour l'hover */
-}
-header .logo img:hover {
-    background-color: #ffffff;
-}
-header nav ul {
-    display: flex;
-    list-style-type: none;
-    gap: 50px;
-    margin-right: 20px;
-    align-items: center;
-}
-header nav ul img {
-    width: 35px;
-    height: 35px;
     border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
-    border: 2px solid #a6a6a6;
-    background-color: #b3b3b3;
 }
-header nav ul img:hover {
-    background: #8c8c8c;
-    cursor: pointer;
-}
-header nav ul a {
-    text-decoration: none;
-}
-header nav ul a:visited {
-    color: #000;
+header img:hover {
+    background-color: #ffffff;
 }
 header nav ul a:hover {
     text-decoration: underline;
     font-weight: 900;
-}
+} 
+
 main {
     position: fixed;
     width: 100%;
