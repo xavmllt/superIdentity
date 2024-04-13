@@ -25,14 +25,17 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item p-2">
+          <li class="nav-item p-2 m-auto">
             <a class="nav-link active" aria-current="page" href="pages/rules.php">RÈGLES</a>
           </li>
-          <li class="nav-item p-2">
+          <li class="nav-item p-2 m-auto">
             <a class="nav-link active" aria-current="page" href="pages/avis.php">AVIS</a>
           </li>
-          <li class="nav-item p-2">
+          <li class="nav-item p-2 m-auto">
             <a class="nav-link active" aria-current="page" href="pages/messagerie.php">MESSAGERIE</a>
+          </li>
+          <li class="nav-item p-2 m-auto">
+            <img src="assets/moon.svg" alt="Moon" onclick="changeDarkMode()">
           </li>
         </ul>
       </div>

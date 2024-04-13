@@ -5,6 +5,7 @@ if(!$_SESSION['password']) {
     header('Location: connexion.php');
 };
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +14,7 @@ if(!$_SESSION['password']) {
     <title>Document</title>
 </head>
 <body>
+    
     <?php
     $recupMessage = $bdd->query('SELECT * FROM messages');
     while($message = $recupMessage->fetch()) {
@@ -21,5 +23,6 @@ if(!$_SESSION['password']) {
         <?php
     };
     ?>
+    
 </body>
 </html>

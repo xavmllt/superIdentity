@@ -71,3 +71,14 @@ main section .belle__description a button:hover {
     color: #fff;
     cursor: pointer; 
 }
+
+@media screen and (max-width: 767px) {
+    main section .belle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main section .belle__image #belle2 {
+        display: none;
+    }   
+}

@@ -44,8 +44,13 @@ main section .reponse {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    justify-items: center;
-    align-items: center;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 main section .choix {
     border: 5px solid #a9a6a6;
@@ -100,4 +105,13 @@ main section .valider button:hover {
     color: #fff;
     cursor: pointer;
     font-size: larger;
+}
+
+@media  screen and (max-width: 767px) {
+    main section .reponse {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    main section .supernana {
+        display: none;
+    }
 }

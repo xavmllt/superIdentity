@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 if(isset($_POST['submit'])) {
     if(!empty($_POST['pseudo']) && !empty($_POST['password'])) {
         $pseudoAdmin = "admin";
@@ -19,6 +20,7 @@ if(isset($_POST['submit'])) {
     };
 };
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,12 +29,16 @@ if(isset($_POST['submit'])) {
     <title>Connexion - Admin</title>
 </head>
 <body>
+
     <form action="" method="post" align="center">
         <input type="text" name="pseudo">
         <br>
+
         <input type="password" name="password">
         <br>
+        
         <input type="submit" name="submit">
     </form>
+
 </body>
 </html>

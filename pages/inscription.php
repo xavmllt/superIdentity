@@ -17,12 +17,14 @@ if(isset($_POST['submit'])) {
                 $messageVerification = "<p style='color:red'>Adresse email invalide</p>";
             }else {
                 $pseudo = htmlspecialchars($_POST['pseudo']);
-                $pwd = sha1($_POST['password']);
+                $pwd = password_hash($_POST['password'], PASSWORD_DEFAULT);
+                var_dump($pwd);
                 $insertUser = $bdd->prepare('INSERT INTO users(pseudo, email, pwd) VALUES (?, ?, ?)');
                 $insertUser->execute(array($pseudo, $email, $pwd));
                 $messageSuccess = "<p style='color:green'>Merci de ton inscription !</p>";
                 $_SESSION['pseudo'] = $pseudo;
                 header('Location: messagerie.php');
+                exit();
             };
         };
     }else {
