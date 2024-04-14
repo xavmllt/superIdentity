@@ -7,7 +7,7 @@ if(isset($_POST['submit'])) {
         $passwordAdmin = "admin";
 
         $pseudoRentrer = htmlspecialchars($_POST['pseudo']);
-        $passwordRentrer = htmlspecialchars($_POST['pseudo']);
+        $passwordRentrer = htmlspecialchars($_POST['password']);
 
         if($pseudoAdmin == $pseudoRentrer && $passwordAdmin == $passwordRentrer) {
             $_SESSION['password'] = $passwordRentrer;

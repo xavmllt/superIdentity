@@ -1,9 +1,11 @@
 <?php
 $bdd = new PDO('mysql:host=localhost;dbname=superIdentity;' , 'root', 'root');
 session_start();
+
 if(!$_SESSION['password']) {
     header('Location: connexion.php');
 };
+
 if(isset($_GET['id']) && !empty($_GET['id'])) {
     $getid = $_GET['id'];
     $recupMessage = $bdd->prepare('SELECT * FROM messages WHERE id = ?');
@@ -15,7 +17,6 @@ if(isset($_GET['id']) && !empty($_GET['id'])) {
     }else {
         echo "Aucun membre trouvé";
     };
-
 }else {
     echo "identifiant non récupérer";
 };

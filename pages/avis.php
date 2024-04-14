@@ -1,27 +1,3 @@
-<?php
-$bdd = new PDO('mysql:host=localhost;dbname=superIdentity;', 'root', 'root');
-@$messageVerification = "";
-if(isset($_POST['submit'])) {
-    $email = $_POST['email'];
-    if(!preg_match("/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/", $email)) {
-        $messageVerification = "<p style='color:red'>Chaine invalide</p>";
-    };
-};
-@$messageSubmit = "";
-if(isset($_POST['submit'])) {
-    if(!empty($_POST['pseudo']) AND !empty($_POST['email']) AND !empty($_POST['commentaire'])) {
-        @$pseudo = htmlspecialchars($_POST['pseudo']);
-        @$email = htmlspecialchars($_POST['email']);
-        @$commentaire = htmlspecialchars($_POST['commentaire']);
-        $insertPlayer = $bdd->prepare('INSERT INTO players(pseudo, email, commentaire) VALUES (?, ?, ?)');
-        $insertPlayer->execute(array($pseudo, $email, $commentaire));
-        $messageSubmit = "<p style='color:green'>Merci de ton commentaire !</p>";
-    }else {
-        $messageSubmit = "<p style='color:red'>Une erreur est survenue, réessaye plus tard</p>";
-    };
-};
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,7 +18,7 @@ if(isset($_POST['submit'])) {
         <section>
             <h1>SUPER FEEDBACK</h1>
             <div class="form">
-                <form method="post">
+                <form action="../controller/avisController.php" method="post">
                     <div class="form__contact">
                         <label for="pseudo" class="form__contact--red">Ton super pseudo :</label>
                         <input type="text" name="pseudo" id="pseudo" autofocus require>
@@ -57,8 +33,8 @@ if(isset($_POST['submit'])) {
                         <input type="submit" id="submit" name="submit">
                     </div>
                     <div class="form__messages">
-                        <div><?php echo $messageVerification?></div>
-                        <div><?php echo $messageSubmit?></div>
+                        <div><?php echo @$messageVerification?></div>
+                        <div><?php echo @$messageSubmit?></div>
                     </div>
                 </form>
             </div>
