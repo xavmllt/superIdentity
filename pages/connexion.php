@@ -32,7 +32,7 @@
                         <input type="submit" id="submit" name="submit">
                     </div>
                     <div class="form__link">
-                    <a href="inscription.php">S'INSCRIRE</a>
+                    <a href="../pages/inscription.php">S'INSCRIRE</a>
                     </div>
                     <div class="messages">
                         <?php echo @$messageErreur;?>

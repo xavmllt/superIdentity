@@ -35,7 +35,7 @@
                         <input type="submit" id="submit" name="submit" value="S'INSCRIRE">
                     </div>
                     <div class="form__link">
-                    <a href="connexion.php">SE CONNECTER</a>
+                    <a href="../pages/connexion.php">SE CONNECTER</a>
                     </div>
                     <div class="messages">
                         <?php echo @$messageVide;?>

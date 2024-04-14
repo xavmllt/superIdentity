@@ -13,7 +13,7 @@ if(isset($_POST['submit'])) {
         @$pseudo = htmlspecialchars($_POST['pseudo']);
         @$email = htmlspecialchars($_POST['email']);
         @$commentaire = htmlspecialchars($_POST['commentaire']);
-        $insertPlayer = $bdd->prepare('INSERT INTO players(pseudo, email, commentaire) VALUES (?, ?, ?)');
+        $insertPlayer = $bdd->prepare('INSERT INTO avis(pseudo, email, commentaire) VALUES (?, ?, ?)');
         $insertPlayer->execute(array($pseudo, $email, $commentaire));
         $messageSubmit = "<p style='color:green'>Merci de ton commentaire !</p>";
     }else {

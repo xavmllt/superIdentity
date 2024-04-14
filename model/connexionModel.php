@@ -6,17 +6,23 @@ $bdd = new PDO('mysql:host=localhost;dbname=superIdentity;', 'root', 'root');
 if(isset($_POST['submit'])) {
     if(!empty($_POST['pseudo']) && !empty($_POST['password'])) {
         $pseudo = htmlspecialchars($_POST['pseudo']);
-        $password = sha1($_POST['password']);
-        $recupUser = $bdd->prepare('SELECT * FROM users WHERE pseudo = ? AND pwd = ?');
-        $recupUser->execute(array($pseudo, $password));
-            if($recupUser->rowCount() > 0) {
+        $password = $_POST['password']; 
+        $recupUser = $bdd->prepare('SELECT * FROM membre WHERE pseudo = ?');
+        $recupUser->execute(array($pseudo));
+        if($recupUser->rowCount() > 0) {
+            $user = $recupUser->fetch();
+            if(password_verify($password, $user['pwd'])) { // Utiliser password_verify() ici
                 $_SESSION['pseudo'] = $pseudo;
-                $_SESSION['id'] = $recupUser->fetch()['id'];
+                $_SESSION['id'] = $user['id'];
                 header('Location: ../pages/messagerie.php');
-            }else {
-                $messageErreur = "<p style='color:red'>Mot de passe ou pseudo incorrect";
+                exit(); 
+            } else {
+                $messageErreur = "<p style='color:red'>Mot de passe incorrect</p>";
             };
-    }else {
-        $messageVide = "<p style='color:red'>Veuillez rensignez tout les champs";
+        } else {
+            $messageErreur = "<p style='color:red'>Pseudo incorrect</p>";
+        }
+    } else {
+        $messageVide = "<p style='color:red'>Veuillez renseigner tous les champs</p>";
     };
 };
