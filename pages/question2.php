@@ -16,21 +16,33 @@
     <title>Super Identity - Identity 2</title>
 </head>
 <body>
+
     <?php include "../components/header.php";?>
+
     <main>
+
         <section>
+
             <h1>Identity 2</h1>
+
             <div class="conteneur">
+
                 <p>Comment réagis-tu face à un conflit ?</p>
+
                 <div class="reponse">
                     <div id="belle" class="choix">Je cherche des solutions logiques pour résoudre le problème</div>
                     <div id="other" class="choix">Je préfère éviter les conflits autant que possible</div>
                     <div id="bulle" class="choix">J'essaie de calmer les tensions et de réconcilier les personnes en conflit</div>
                     <div id="rebelle" class="choix">Je prends la défense de ceux qui sont injustement traités</div>    
                 </div>
+
             </div>
+
             <?php include "../components/supernanaImage.php";?>
+
         </section>
+
     </main>
+    
 </body>
 </html>

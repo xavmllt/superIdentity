@@ -16,21 +16,32 @@
     <title>Super Identity - Identity 11</title>
 </head>
 <body>
+
     <?php include "../components/header.php";?>
+
     <main>
+
         <section>
+
             <h1>Identity 11</h1>
+
             <div class="conteneur">
+
                 <p>Quelle est ta plus grande qualité selon toi ?</p>
+
                 <div class="reponse">
                     <div id="belle" class="choix">Mon intelligence et ma capacité à apprendre rapidement</div>
                     <div id="other" class="choix">Je suis plutôt modeste et je n'aime pas me vanter</div>
                     <div id="bulle" class="choix">Ma capacité à comprendre les émotions des autres et à les soutenir</div>
                     <div id="rebelle" class="choix">Ma force et ma détermination à protéger ceux que j'aime</div>    
                 </div>
+
             </div>
+
             <?php include "../components/supernanaImage.php";?>
+
         </section>
     </main>
+    
 </body>
 </html>

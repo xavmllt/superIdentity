@@ -16,48 +16,60 @@
     <title>Super Identity</title>
 </head>
 <body>
-<header>
-  <nav style="height: 50px" class="navbar navbar-expand-lg bg-body-tertiary">
-    <div style="background-color: #e6e6e6" class="container-fluid bg">
-      <a class="navbar-brand" href="index.php"><img src="assets/logo.png" alt="Logo superIdentity"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item p-2 m-auto">
-            <a class="nav-link active" aria-current="page" href="pages/rules.php">RÈGLES</a>
-          </li>
-          <li class="nav-item p-2 m-auto">
-            <a class="nav-link active" aria-current="page" href="pages/avis.php">AVIS</a>
-          </li>
-          <li class="nav-item p-2 m-auto">
-            <a class="nav-link active" aria-current="page" href="pages/messagerie.php">MESSAGERIE</a>
-          </li>
-          <li class="nav-item p-2 m-auto">
-            <img src="assets/moon.svg" alt="Moon" onclick="changeDarkMode()">
-          </li>
-        </ul>
+  <header>
+    <nav style="height: 50px" class="navbar navbar-expand-lg bg-body-tertiary">
+      <div style="background-color: #e6e6e6" class="container-fluid bg">
+        <a class="navbar-brand" href="index.php"><img src="assets/logo.png" alt="Logo superIdentity"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item p-2 m-auto">
+              <a class="nav-link active" aria-current="page" href="pages/rules.php">RÈGLES</a>
+            </li>
+            <li class="nav-item p-2 m-auto">
+              <a class="nav-link active" aria-current="page" href="pages/avis.php">AVIS</a>
+            </li>
+            <li class="nav-item p-2 m-auto">
+              <a class="nav-link active" aria-current="page" href="pages/messagerie.php">MESSAGERIE</a>
+            </li>
+            <li class="nav-item p-2 m-auto">
+              <img src="assets/moon.svg" alt="Moon" onclick="changeDarkMode()">
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
+    </nav>
+  </header>
+
     <main>
+
         <section>
+
             <h1>Bienvenue sur Super Identity</h1>
+
             <p>T'es-tu déjà demandé à quelle super nana tu corresponds ?</p>
+
             <div class="supernana">
                 <img src="assets/rebelle.png" alt="Rebelle">
                 <img src="assets/belle.png" alt="Belle">
                 <img src="assets/bulle.png" alt="Bulle">
             </div>
+
             <a href="pages/question1.php"><button>JOUER</button></a>
+
         </section>
+
     </main>
+
     <footer>
+
         <div class="marque">
             &copy;SUPER IDENTITY
         </div>
+
     </footer>
+    
 </body>
 </html>

@@ -14,23 +14,34 @@
     <title>Super Identity - Messagerie</title>
 </head>
 <body>
+
     <?php include "../components/header.php";?>
+
     <main>
+
         <h1>SUPER MESSAGERIE</h1>
+
         <section id="messages"></section>
+
         <form action="../controller/messagerieController.php" method="post">
+
                 <div class="input">
                     <textarea name="message" placeholder="Entre ton message ici"></textarea>
                     <input type="submit" value="envoyer" name="submit">
                 </div>
-            </form>
+
+        </form>
+
         <a href="../scripts/logout.php"><button>SE DÉCONNECTER</button></a>
+
     </main>
+
     <script>
-        setInterval('load_messages()', 1000);
+        setInterval('load_messages()', 1000); // refresh every 1 second
         function load_messages() {
             $('#messages').load('../scripts/loadMessages.php');
         };
     </script>
+
 </body>
 </html>

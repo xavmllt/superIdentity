@@ -19,23 +19,32 @@ let compteurOther = parseInt(params.get('compteurOther')) || 0;
 let clickCount = 0;
 let clickTimeout = 0;
 
+// addEventListener for the double click
+
 belle.addEventListener("click", ()=> {
-    clickCount++;
-    if(clickCount === 1) {
-        clickTimeout = setTimeout(function() {
-            clickCount = 0;
+
+    clickCount++; 
+
+    if(clickCount === 1) { 
+        
+        clickTimeout = setTimeout(function() { 
+            clickCount = 0; 
         },   300);
-    }else if(clickCount === 2) {
+    }else if(clickCount === 2) { 
         clearTimeout(clickTimeout);
         clickCount = 0;
         compteurBelle++;
         mettreAJourURL();
     };
+
 });
 
 bulle.addEventListener("click", ()=> {
+
     clickCount++;
+
     if(clickCount === 1) {
+
         clickTimeout = setTimeout(function() {
             clickCount = 0;
         },   300);
@@ -43,27 +52,35 @@ bulle.addEventListener("click", ()=> {
         clearTimeout(clickTimeout);
         clickCount = 0;
         compteurBulle++;
-        mettreAJourURL();
+       mettreAJourURL();
     };
+
 });
 
 rebelle.addEventListener("click", ()=> {
+
     clickCount++;
+
     if(clickCount === 1){
+
         clickTimeout = setTimeout(function() {
             clickCount = 0;
-        },   300);
+        },   300);   
     }else if(clickCount === 2) {
         clearTimeout(clickTimeout);
         clickCount = 0;
         compteurRebelle++;
         mettreAJourURL();
     };
+
 });
 
 other.addEventListener("click", ()=> {
+
     clickCount++;
-    if(clickCount === 1){
+
+    if(clickCount === 1) {
+
         clickTimeout = setTimeout(function() {
             clickCount = 0;
         },   300);
@@ -73,4 +90,5 @@ other.addEventListener("click", ()=> {
         compteurOther++;
         mettreAJourURL();
     };
+
 });

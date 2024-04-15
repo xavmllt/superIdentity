@@ -2,9 +2,10 @@
 session_start();
 
 if(isset($_POST['submit'])) {
+
     if(!empty($_POST['pseudo']) && !empty($_POST['password'])) {
         $pseudoAdmin = "admin";
-        $passwordAdmin = "admin";
+        $passwordAdmin = "azertyuiop123";
 
         $pseudoRentrer = htmlspecialchars($_POST['pseudo']);
         $passwordRentrer = htmlspecialchars($_POST['password']);
@@ -15,9 +16,11 @@ if(isset($_POST['submit'])) {
         }else {
             echo "Pseudo ou mot de passe incorrect";
         };
+
     }else {
         echo "Veuille remplir tout les champs";
     };
+    
 };
 ?>
 
@@ -31,6 +34,7 @@ if(isset($_POST['submit'])) {
 <body>
 
     <form action="" method="post" align="center">
+
         <input type="text" name="pseudo">
         <br>
 
@@ -38,6 +42,7 @@ if(isset($_POST['submit'])) {
         <br>
         
         <input type="submit" name="submit">
+        
     </form>
 
 </body>

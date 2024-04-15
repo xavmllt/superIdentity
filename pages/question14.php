@@ -16,21 +16,33 @@
     <title>Super Identity - Identity 14</title>
 </head>
 <body>
+
     <?php include "../components/header.php";?>
+
     <main>
+
         <section>
+
             <h1>Identity 14</h1>
+
             <div class="conteneur">
+
                 <p>Comment définirais-tu ta quête personnelle ?</p>
+
                 <div class="reponse">
                     <div id="belle" class="choix">Chercher constamment à acquérir plus de connaissances</div>
                     <div id="bulle" class="choix">Rechercher l'harmonie intérieure et extérieure</div>
                     <div id="rebelle" class="choix">S'affirmer et défendre ses convictions coûte que coûte</div>
                     <div id="other" class="choix">Je ne me suis pas encore fixé(e) sur une quête spécifique</div>
                 </div>
+
             </div>
+
             <?php include "../components/supernanaImage.php";?>
+
         </section>
+
     </main>
+    
 </body>
 </html>

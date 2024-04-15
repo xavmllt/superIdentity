@@ -11,12 +11,12 @@ if(!$_SESSION['password']) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Historique des messages</title>
 </head>
 <body>
     
     <?php
-    $recupMessage = $bdd->query('SELECT * FROM messages');
+    $recupMessage = $bdd->query('SELECT * FROM messagerie');
     while($message = $recupMessage->fetch()) {
         ?>
         <p><?php echo $message['pseudo'].' : '.$message['message'];?> <a href="delete.php?id=<?=$message['id'];?>" style="color:red;text-decoration:none">Delete message</a></p>

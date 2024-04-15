@@ -13,34 +13,48 @@
     <title>Super Identity - Connexion</title>
 </head>
 <body>
+
     <?php include "../components/header.php";?>
+
     <main>
+
         <section>
+
             <h1>SUPER CONNEXION</h1>
             <h2>Connecte-toi pour avoir accès à la messagerie avec les autres super !</h2>
+            
             <div class="form">
                 <form action="../controller/connexionController.php" method="post">
+
                     <div class="form__contact">
                         <label for="pseudo" class="form__contact--red">Ton super pseudo :</label>
                         <input type="text" name="pseudo" id="pseudo" autofocus require>
                     </div>
+
                     <div class="form__password">
                         <label for="password" class="password--blue">Ton super mot de passe :</label>
                         <input type="password" name="password" id="password">
                     </div>
+
                     <div class="form__submit">
                         <input type="submit" id="submit" name="submit">
                     </div>
+
                     <div class="form__link">
-                    <a href="../pages/inscription.php">S'INSCRIRE</a>
+                        <a href="../pages/inscription.php">S'INSCRIRE</a>
                     </div>
+
                     <div class="messages">
-                        <?php echo @$messageErreur;?>
-                        <?php echo @$messageVide;?>
+                        <?= @$messageErreur;?>
+                        <?= @$messageVide;?>
                     </div>
+
                 </form>
             </div>
+
         </section>
+
     </main>
+
 </body>
 </html>

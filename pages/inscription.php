@@ -13,39 +13,53 @@
     <title>Super Identity - Inscription</title>
 </head>
 <body>
+
     <?php include "../components/header.php";?>
+
     <main>
+
         <section>
+
             <h1>SUPER INSCRIPTION</h1>
             <h2>Rejoins-le gang des super 🦸</h2>
             <h3>Tu pourras discuter avec les autres super 🔥</h3>
+
             <div class="form">
                 <form action="../controller/inscriptionController.php" method="post">
+
                     <div class="form__contact">
                         <label for="pseudo" class="form__contact--red">Ton super pseudo :</label>
                         <input type="text" name="pseudo" id="pseudo" autofocus required>
                         <label for="email" class="form__contact--green">Ton super email :</label>
                         <input type="email" name="email" id="email" required>
                     </div>
+
                     <div class="form__password">
                         <label for="password" class="password--blue">Ton super mot de passe :</label>
                         <input type="password" name="password" id="password" required>
                     </div>
+
                     <div class="form__submit">
                         <input type="submit" id="submit" name="submit" value="S'INSCRIRE">
                     </div>
+
                     <div class="form__link">
-                    <a href="../pages/connexion.php">SE CONNECTER</a>
+                        <a href="../pages/connexion.php">SE CONNECTER</a>
                     </div>
+
                     <div class="messages">
-                        <?php echo @$messageVide;?>
-                        <?php echo @$messageVerification;?>
-                        <?php echo @$messageErreur;?>
-                        <?php echo @$messageSuccess;?>
+                        <?= @$messageVide;?>
+                        <?= @$messageVerification;?>
+                        <?= @$messageErreur;?>
+                        <?= @$messageSuccess;?>
                     </div>
+
                 </form>
             </div>
+
         </section>
+
     </main>
+    
 </body>
 </html>

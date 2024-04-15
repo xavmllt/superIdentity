@@ -16,21 +16,33 @@
     <title>Super Identity - Identity 7</title>
 </head>
 <body>
+
     <?php include "../components/header.php";?>
+
     <main>
+
         <section>
+
             <h1>Identity 7</h1>
+
             <div class="conteneur">
+
                 <p>Comment gères-tu les moments de stress intense ?</p>
+
                 <div class="reponse">
                     <div id="other" class="choix">Je réagis différemment à chaque fois, ça dépend vraiment</div>
                     <div id="bulle" class="choix">En cherchant des moyens créatifs pour calmer mes émotions</div>
                     <div id="belle" class="choix">En me concentrant sur la résolution logique des problèmes</div>
                     <div id="rebelle" class="choix">En me lançant dans l'action pour résoudre la situation</div>    
                 </div>
+
             </div>
+
             <?php include "../components/supernanaImage.php";?>
+
         </section>
+
     </main>
+    
 </body>
 </html>

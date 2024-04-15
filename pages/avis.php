@@ -13,32 +13,45 @@
     <title>Super Identity - Avis</title>
 </head>
 <body>
+
     <?php include "../components/header.php";?>
+
     <main>
+
         <section>
+
             <h1>SUPER FEEDBACK</h1>
+
             <div class="form">
                 <form action="../controller/avisController.php" method="post">
+
                     <div class="form__contact">
                         <label for="pseudo" class="form__contact--red">Ton super pseudo :</label>
-                        <input type="text" name="pseudo" id="pseudo" autofocus require>
+                        <input type="text" name="pseudo" id="pseudo" autofocus require> 
                         <label for="email" class="form__contact--green">Ton super email :</label>
                         <input type="email" name="email" id="email" require>
                     </div>
+
                     <div class="form__area">
                         <label for="textarea" class="textarea--blue">Ton super commentaire :</label>
                         <textarea name="commentaire" id="commentaire" cols="30" rows="10" require></textarea>
                     </div>
+
                     <div class="form__submit">
                         <input type="submit" id="submit" name="submit">
                     </div>
+
                     <div class="form__messages">
-                        <div><?php echo @$messageVerification?></div>
-                        <div><?php echo @$messageSubmit?></div>
+                        <div><?= @$messageVerification?></div>
+                        <div><?= @$messageSubmit?></div>
                     </div>
+
                 </form>
             </div>
+
         </section>
+
     </main>
+
 </body>
 </html>

@@ -16,21 +16,33 @@
     <title>Super Identity - Identity 1</title>
 </head>
 <body>
+
     <?php include "../components/header.php";?>
+
     <main>
+
         <section>
+
             <h1>Identity 1</h1>
+
             <div class="conteneur">
+
                 <p>Quelle activité préfères-tu pendant ton temps libre ?</p>
+
                 <div class="reponse">
                     <div id="belle" class="choix">Lire des livres ou apprendre quelque chose de nouveau</div>
                     <div id="bulle" class="choix">Participer à des actions caritatives ou aider les autres</div>
                     <div id="rebelle" class="choix">Exprimer ma créativité à travers l'art ou la musique</div>
                     <div id="other" class="choix">Ça dépend de mon humeur du jour</div>
                 </div>
+
             </div>
+
             <?php include "../components/supernanaImage.php";?>
+
         </section>
+
     </main>
+    
 </body>
 </html>

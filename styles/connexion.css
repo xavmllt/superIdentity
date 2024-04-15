@@ -61,7 +61,6 @@ main section .form form .form__contact {
     flex-direction: column;
     align-items: center;
 }
-
 main section .form form .form__contact input {
     width: 200px;
     height: 30px;

@@ -16,21 +16,33 @@
     <title>Super Identity - Identity 6</title>
 </head>
 <body>
+
     <?php include "../components/header.php";?>
+
     <main>
+
         <section>
+
             <h1>Identity 6</h1>
+
             <div class="conteneur">
+
                 <p>Quel serait ton rôle dans un groupe d'amis ?</p>
+
                 <div class="reponse">
                     <div id="belle" class="choix">Celui qui propose des idées intelligentes et réfléchies</div>
                     <div id="bulle" class="choix">Celui qui soutient émotionnellement et conseille ses amis</div>
                     <div id="rebelle" class="choix">Celui qui prend l'initiative lors des situations dangereuses</div>
                     <div id="other" class="choix">Ça dépend vraiment de la situation et des besoins du groupe</div>
                 </div>
+
             </div>
+
             <?php include "../components/supernanaImage.php";?>
+
         </section>
+
     </main>
+    
 </body>
 </html>

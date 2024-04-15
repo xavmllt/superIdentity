@@ -16,21 +16,33 @@
     <title>Super Identity - Identity 8</title>
 </head>
 <body>
+
     <?php include "../components/header.php";?>
+
     <main>
+
         <section>
+
             <h1>Identity 8</h1>
+
             <div class="conteneur">
+
                 <p>Quelle qualité est la plus importante pour toi dans une décision importante ?</p>
+                
                 <div class="reponse">
                     <div id="bulle" class="choix">L'intuition et le sentiment</div>
                     <div id="other" class="choix">Je ne sais pas vraiment, ça dépend des circonstances</div>
                     <div id="rebelle" class="choix">L'audace et la détermination</div> 
                     <div id="belle" class="choix">La rationalité et la logique</div>
                 </div>
+
             </div>
+
             <?php include "../components/supernanaImage.php";?>
+
         </section>
+
     </main>
+    
 </body>
 </html>

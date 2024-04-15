@@ -14,11 +14,17 @@
     <title>Super Identity - Règles</title>
 </head>
 <body>
+
     <?php include "../components/header.php";?>
+
     <main>
+
         <section>
+
             <p>Découvre qu'elle est la super nana qui te correspond avec Super Identity !</p>
+
             <div class="rules">
+
                 <div class="rules__texte">
                     <h1>But du jeu :</h1>
                     <p>Tu devras répondre à une serie de questions qui, à la fin, détermineront si tu es plus <em>Bulle 🙄</em>, <em>Belle 🤭</em> ou <em> Rebelle 😤</em>.</p>
@@ -28,11 +34,16 @@
                     <div class="rules__bouton">
                     <a href="../index.php"><button>Accueil</button></a></div>
                 </div>
+
                 <div class="rules__image">
-                    <img src="../assets/supers-nanas-personnages.png" alt="Super nana">
+                    <img src="../assets/supers-nanas-personnages.png" alt="Les trois Super nana">
                 </div> 
+
             </div>
+
         </section>
+
     </main>
+
 </body>
 </html>

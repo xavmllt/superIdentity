@@ -16,21 +16,33 @@
     <title>Super Identity - Identity 3</title>
 </head>
 <body>
+
     <?php include "../components/header.php";?>
+
     <main>
+
         <section>
+
             <h1>Identity 3</h1>
+
             <div class="conteneur">
+
                 <p>Quel genre de super-pouvoir aimerais-tu avoir ?</p>
+                
                 <div class="reponse">
                     <div id="other" class="choix">Ça m'est égal, tant que ça me rend service</div>
                     <div id="bulle" class="choix">La capacité à communiquer avec les animaux ou contrôler la nature</div>
                     <div id="belle" class="choix">Une intelligence surhumaine pour résoudre tous les problèmes</div>
                     <div id="rebelle" class="choix">Une force extraordinaire pour protéger mes proches</div>    
                 </div>
+
             </div>
+
             <?php include "../components/supernanaImage.php";?>
+
         </section>
+
     </main>
+    
 </body>
 </html>

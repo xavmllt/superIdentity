@@ -1,18 +1,26 @@
 <?php
+
 session_start();
+
 $bdd = new PDO('mysql:host=localhost;dbname=superIdentity;', 'root', 'root');
+
 $messageVide = "";
 $messageVerification = ""; 
 $messageErreur = "";
 $messageSuccess = "";
+
 if(isset($_POST['submit'])) {
+
     if(!empty($_POST['pseudo']) && !empty($_POST['email']) && !empty($_POST['password'])) {
         $checkUser = $bdd->prepare('SELECT * FROM membre WHERE pseudo = ? AND email = ?');
         $checkUser->execute(array($_POST['pseudo'], $_POST['email']));
+        
         if($checkUser->rowCount() > 0) {
             $messageVide = "<p style='color:red'>Pseudo ou email déjà utilisé(s). Veuillez réessayer.</p>";
         }else {
-            $email = $_POST['email'];
+
+            $email = $_POST['email']; // recup Email for the verification
+
             if(!preg_match("/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/", $email)) {
                 $messageVerification = "<p style='color:red'>Adresse email invalide</p>";
             }else {
@@ -25,8 +33,11 @@ if(isset($_POST['submit'])) {
                 header('Location: ../pages/messagerie.php');
                 exit();
             };
+
         };
+
     }else {
         $messageErreur = "<p style='color:red'>Veuillez renseigner tous les champs !</p>";
     };
+
 };

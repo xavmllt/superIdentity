@@ -16,21 +16,33 @@
     <title>Super Identity - Identity 4</title>
 </head>
 <body>
+
     <?php include "../components/header.php";?>
+
     <main>
+
         <section>
+
             <h1>Identity 4</h1>
+
             <div class="conteneur">
+
                 <p>Quelle qualité est la plus importante pour toi chez un ami ?</p>
+
                 <div class="reponse">
                     <div id="belle" class="choix">L'intelligence et la sagesse</div>
                     <div id="other" class="choix">Je n'ai pas de préférence particulière</div>
                     <div id="bulle" class="choix">La gentillesse et l'empathie</div>
                     <div id="rebelle" class="choix">La loyauté et le courage</div>    
                 </div>
+
             </div>
+
             <?php include "../components/supernanaImage.php";?>
+
         </section>
+
     </main>
+    
 </body>
 </html>

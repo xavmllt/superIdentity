@@ -16,21 +16,33 @@
     <title>Super Identity - Identity 10</title>
 </head>
 <body>
+
     <?php include "../components/header.php";?>
+
     <main>
+
         <section>
+
             <h1>Identity 10</h1>
+
             <div class="conteneur">
+
                 <p>Comment réagis-tu face à une injustice dont tu es témoin ?</p>
+
                 <div class="reponse">
                     <div id="other" class="choix">Je me sens mal mais je ne sais pas toujours comment agir</div>
                     <div id="bulle" class="choix">J'essaie de comprendre toutes les parties et de trouver un terrain d'entente</div>
                     <div id="belle" class="choix">Je cherche des moyens légaux pour aider</div>
                     <div id="rebelle" class="choix">Je m'engage immédiatement pour défendre la justice</div>    
                 </div>
+
             </div>
+
             <?php include "../components/supernanaImage.php";?>
+
         </section>
+
     </main>
+    
 </body>
 </html>

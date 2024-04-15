@@ -15,18 +15,28 @@
     <title>Super Identity - Résultat</title>
 </head>
 <body>
+
     <?php include "../components/header.php";?>
+
     <main>
+
         <section>
+
             <h1>Identity</h1>
+
             <div class="conteneur">
                 <p>Découvre ta super Identity !</p>
             </div>
+
             <div class="valider">
                 <div><button id="bouton">Résultat</button></div>
             </div>
+
             <?php include "../components/supernanaImage.php";?>
+
         </section>
+
     </main>
+    
 </body>
 </html>
