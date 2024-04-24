@@ -2,10 +2,16 @@
     margin: 0;
     padding: 0;
 }
-
+header {
+    z-index: 1;
+}
 body {
     background: rgb(133,224,133);
     background: linear-gradient(90deg, rgba(133,224,133,1) 20%, rgba(255,77,77,1) 50%, rgba(0,212,255,1) 85%);
+    display: flex;
+    flex-direction: column; 
+    z-index: 2;
+
 }
 header img {
     width: 45px;
@@ -22,8 +28,13 @@ header nav ul a:hover {
 } 
 
 main {
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
+    flex-grow: 1; 
+    margin-top: 20px;
+}
+main section {
+    margin-bottom: 100px;
 }
 main section h1 {
     font-family: 'Dancing Script', cursive;
@@ -79,14 +90,14 @@ footer .marque {
     justify-content: center;
     align-items: center;
     margin-top: 40px;
-    position: fixed;
+    position: fixed; 
     left: 0;
     bottom: 0;
     width: 100%;
 }
 
-@media screen and (max-width: 1023px) {
+/* @media screen and (max-width: 1023px) {
     main, footer .marque {
         position: static;
     };
-};
+}; */

@@ -1,11 +1,16 @@
 <?php
 session_start();
+
 if(!$_SESSION['pseudo']) {
-    header('Location: connexion.php');
+    header('Location: ../pages/connexion.php');
 };
+
 $message = "";
+
 $bdd = new PDO("mysql:host=localhost;dbname=superIdentity;", 'root', 'root');
+
 if(isset($_POST['submit'])) {
+
     if(!empty($_POST['message'])) {
         $pseudo = $_SESSION['pseudo'];
         $message = nl2br(htmlspecialchars($_POST['message'])); // Saut de ligne automatique
@@ -14,4 +19,5 @@ if(isset($_POST['submit'])) {
     }else {
         $message = "<p style='color:green'>Écris ton super mssage</p>";
     };
+    
 };

@@ -19,7 +19,7 @@ header img:hover {
 header nav ul a:hover {
     text-decoration: underline;
     font-weight: 900;
-} 
+}
 
 main section .rebelle {
     display: flex;
@@ -67,4 +67,15 @@ main section .rebelle__description a button:hover {
     background: linear-gradient(to right, darkblue, darkorchid) border-box;
     color: #fff;
     cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    main section .rebelle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main section .rebelle__image  {
+        display: none;
+    }   
 }

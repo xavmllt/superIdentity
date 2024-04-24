@@ -19,7 +19,7 @@ if(!$_SESSION['password']) {
     $recupMessage = $bdd->query('SELECT * FROM messagerie');
     while($message = $recupMessage->fetch()) {
         ?>
-        <p><?php echo $message['pseudo'].' : '.$message['message'];?> <a href="delete.php?id=<?=$message['id'];?>" style="color:red;text-decoration:none">Delete message</a></p>
+        <p><?= $message['pseudo'].' : '.$message['message'];?> <a href="delete.php?id=<?=$message['id'];?>" style="color:red;text-decoration:none">Delete message</a></p>
         <?php
     };
     ?>

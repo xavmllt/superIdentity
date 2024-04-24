@@ -35,7 +35,6 @@
                     <div id="rebelle" class="choix">Exprimer ma créativité à travers l'art ou la musique</div>
                     <div id="other" class="choix">Ça dépend de mon humeur du jour</div>
                 </div>
-
             </div>
 
             <?php include "../components/supernanaImage.php";?>

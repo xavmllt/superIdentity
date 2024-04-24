@@ -14,79 +14,46 @@ let compteurBulle = parseInt(params.get('compteurBulle')) || 0;
 let compteurRebelle = parseInt(params.get('compteurRebelle')) || 0;
 let compteurOther = parseInt(params.get('compteurOther')) || 0;
 
-let clickCount = 0;
-let clickTimeout = 0;
 
 // addEventListener for the double click
+let clickCount = 0;
 
-belle.addEventListener("click", ()=> {
-
+belle.addEventListener("click", () => {
     clickCount++; 
 
-    if(clickCount === 1) { 
-        
-        clickTimeout = setTimeout(function() { 
-            clickCount = 0; 
-        },   300);
-    }else if(clickCount === 2) { 
-        clearTimeout(clickTimeout);
-        clickCount = 0;
-        compteurBelle++;
-        mettreAJourURL();
+    if (clickCount === 2) { 
+        clickCount = 0; 
+        compteurBelle++; 
+        mettreAJourURL(); 
     };
-
 });
 
-bulle.addEventListener("click", ()=> {
+bulle.addEventListener("click", () => {
+    clickCount++; 
 
-    clickCount++;
-
-    if(clickCount === 1) {
-
-        clickTimeout = setTimeout(function() {
-            clickCount = 0;
-        },   300);
-    }else if(clickCount === 2) {
-        clearTimeout(clickTimeout);
-        clickCount = 0;
-        compteurBulle++;
-       mettreAJourURL();
+    if (clickCount === 2) { 
+        clickCount = 0; 
+        compteurBulle++; 
+        mettreAJourURL(); 
     };
-
 });
 
-rebelle.addEventListener("click", ()=> {
+rebelle.addEventListener("click", () => {
+    clickCount++; 
 
-    clickCount++;
-
-    if(clickCount === 1){
-
-        clickTimeout = setTimeout(function() {
-            clickCount = 0;
-        },   300);   
-    }else if(clickCount === 2) {
-        clearTimeout(clickTimeout);
-        clickCount = 0;
-        compteurRebelle++;
-        mettreAJourURL();
+    if (clickCount === 2) { 
+        clickCount = 0; 
+        compteurRebelle++; 
+        mettreAJourURL(); 
     };
-
 });
 
-other.addEventListener("click", ()=> {
+other.addEventListener("click", () => {
+    clickCount++; 
 
-    clickCount++;
-
-    if(clickCount === 1) {
-
-        clickTimeout = setTimeout(function() {
-            clickCount = 0;
-        },   300);
-    }else if(clickCount === 2) {
-        clearTimeout(clickTimeout);
-        clickCount = 0;
-        compteurOther++;
-        mettreAJourURL();
+    if (clickCount === 2) { 
+        clickCount = 0; 
+        compteurOther++; 
+        mettreAJourURL(); 
     };
-
 });
